@@ -1,5 +1,31 @@
 # Handwritten Digit Classification with MNIST Dataset
 
+Handwritten digit recognition on MNIST, from a decision tree (88.29%) to logistic regression, k-nearest neighbours and a neural network written in NumPy (97.92%), for NTU SC1015 (2024).
+
+[![Python](https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://jupyter.org/)
+![NTU SC1015](https://img.shields.io/badge/NTU-SC1015%20Data%20Science%20%26%20AI-1F3A93?style=flat-square)
+
+## What it does
+
+Asks whether digit recognition could take over the data entry of handwritten cheque amounts. One notebook explores the 70,000 MNIST images (digit frequency, ink density, pixel use); four more train and compare classifiers of increasing sophistication: a decision tree (depth 18, 88.29%), multinomial logistic regression (92.07%), k-nearest neighbours with k = 5 (96.88%) and a neural network trained with stochastic gradient descent (97.92% with 1,024 hidden nodes). The [slides](Project%20Video%20Slides.pdf) and the [project video](ACDA1_Team%201_GaneshKowLaw.mp4) walk through the results.
+
+## Tech
+
+Python, pandas, NumPy, scikit-learn, matplotlib, seaborn, OpenCV, Graphviz, Jupyter. The CSVs are stored with Git LFS.
+
+## Run
+
+```bash
+git lfs install                     # the MNIST CSVs are LFS objects (the training set is over 100 MB)
+git clone https://github.com/Unknown-Blaze/SC1015-Mini-Project.git
+cd SC1015-Mini-Project
+pip install notebook pandas numpy scikit-learn matplotlib seaborn opencv-python graphviz
+jupyter notebook                    # open the notebooks in the order listed under Dataset below
+```
+
 ## Overview
 
 This is a Mini-Project for SC1015 - Introduction to Data Science and Artificial Intelligence.
