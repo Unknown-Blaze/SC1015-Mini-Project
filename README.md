@@ -30,7 +30,7 @@ jupyter notebook                    # open the notebooks in the order listed und
 
 This is a Mini-Project for SC1015 - Introduction to Data Science and Artificial Intelligence.
 
-In this project, we leverage various machine learning models with the aim of creating a model which can recognise handwritten digits accurately. From the rudimentary Decision Tree Model, we progress towards the Logistic Regression, K-Nearest Neighbours and Convoluted Neural Network models, increasing in accuracy and sophistication each time. This project not only documents our results, but also our growth as data science students. 
+In this project, we leverage various machine learning models with the aim of creating a model which can recognise handwritten digits accurately. From the rudimentary Decision Tree Model, we progress towards the Logistic Regression, K-Nearest Neighbours and Neural Network models, increasing in accuracy and sophistication each time. This project not only documents our results, but also our growth as data science students. 
 
 ## Problem Definition
 
@@ -45,7 +45,7 @@ The MNIST dataset is a common dataset used for training computer vision models. 
 - [Decision Tree](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/decision_tree.ipynb)
 - [Logistic Regression](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/Logistic%20Regression.ipynb)
 - [K-Nearest Neighbours](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/K%20Nearest%20Neighbours.ipynb)
-- [Convoluted Neural Networks (CNN)](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/cnn_code.ipynb)
+- [Neural Network](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/cnn_code.ipynb)
 
 ## Exploratory Data Analysis and Visualization
 
@@ -86,21 +86,21 @@ The third model we have implemented (out of syllabus) is the K-Nearest Neighbour
 
 Under the K-Nearest Neighbours model, we find that the maximum total accuracy attained is 96.88%.
 
-### Convoluted Neural Networks (CNN)
+### Neural Network
 
-The fourth model we have implemented (out of syllabus) is the Convoluted Neural Network, which we have trained using stochastic gradient descent. Various numbers of nodes in the hidden layer (32, 64, 128, 256, 512, 1024) were implemented and evaluated. Each time we have plotted side-by-side graphs to visualise the improvements in the cross entropy loss as well as improvements in model prediction accuracy.
+The fourth model we have implemented (out of syllabus) is a fully connected neural network with one hidden layer, written in NumPy, which we have trained using stochastic gradient descent. Various numbers of nodes in the hidden layer (32, 64, 128, 256, 512, 1024) were implemented and evaluated. Each time we have plotted side-by-side graphs to visualise the improvements in the cross entropy loss as well as improvements in model prediction accuracy.
 
-On evaluating the model, we have found that the maximum attained total accuracy for the Convoluted Neural Network is 97.92%, with 1024 nodes in the hidden layer. Note that running this code will always produce a different value, though with samll variations (97.90 ± 0.10)
+On evaluating the model, we have found that the maximum attained total accuracy for the Neural Network is 97.92%, with 1024 nodes in the hidden layer. Note that running this code will always produce a different value, though with small variations (97.90 ± 0.10).
 
 
 ## Results
 
 - The prediction accuracies of the models rank in the following order (highest to lowest):
-    - Convoluted Neural Network (CNN)
+    - Neural Network
     - K-Nearest Neighbours (KNN)
     - Logistic Regression
     - Decision Tree
-- Most of the models have consistent trouble prediction the digit '8' accurately, while the digit '1' enjoys the highest prediction accuracy. This could be due to the similarities of 8 with other numbers (e.g 6, 9 etc.) as compared to 1 with a more distinctive look.
+- Most of the models have consistent trouble predicting the digit '8' accurately, while the digit '1' enjoys the highest prediction accuracy. This could be due to the similarities of 8 with other numbers (e.g 6, 9 etc.) as compared to 1 with a more distinctive look.
 - The models have a threshold, after which, their prediction accuracies do not increase any further. This is true for all the models used in this project.  
 
 ## Conclusion
@@ -111,12 +111,12 @@ From the results of the project, full automation in cheque data-entry is still n
 
 - K-Nearest Neighbours from sklearn
 - Logistic Regression from sklearn
-- Convoluted Neural Network (CNN)
+- Neural networks from scratch in NumPy
 - Normalising values
 
 ## Contributions
 
-- Ganesh Rudra Prasadh (@Unknown-Blaze) - Convoluted Neural Network (CNN) and Github organisation
+- Ganesh Rudra Prasadh (@Unknown-Blaze) - Neural Network and GitHub organisation
 - Law Yu Chen (@y4y4y4y4y4) - Decision Tree, Logistic Regression, K-Nearest Neighbours (KNN) analysis
 - Kow Zi Ting (@HighlandK) - Exploratory Data Analysis and Visualisation, Complete video editing and overall compilation
 
@@ -131,7 +131,6 @@ From the results of the project, full automation in cheque data-entry is still n
 - https://www.kaggle.com/datasets/oddrationale/mnist-in-csv/data
 - https://medium.com/@AMustafa4983/handwritten-digit-recognition-a-beginners-guide-638e0995c826
 - https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
-- https://medium.com/@AMustafa4983/handwritten-digit-recognition-a-beginners-guide-638e0995c826
 - https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
 
 ## Quick Start Guide
